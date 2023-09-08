@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8CEAA1A-54B7-466D-96CB-DE1D47A4EBDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CipherNext</RootNamespace>
+    <AssemblyName>CipherNext</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1938.49, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1938.49\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1938.49, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1938.49\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1938.49, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1938.49\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodigoBarras\frmCodigoBarras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodigoBarras\frmCodigoBarras.Designer.cs">
+      <DependentUpon>frmCodigoBarras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmMD5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmMD5.Designer.cs">
+      <DependentUpon>frmMD5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA1.Designer.cs">
+      <DependentUpon>frmSHA1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA256.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA256.Designer.cs">
+      <DependentUpon>frmSHA256.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA384.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA384.Designer.cs">
+      <DependentUpon>frmSHA384.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA512.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmSHA512.Designer.cs">
+      <DependentUpon>frmSHA512.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Esteganografia\frmEspacoEmBranco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esteganografia\frmEspacoEmBranco.Designer.cs">
+      <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarregar.Designer.cs">
+      <DependentUpon>frmCarregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmCifraCesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmCifraCesar.Designer.cs">
+      <DependentUpon>frmCifraCesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualizarDescricao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualizarDescricao.Designer.cs">
+      <DependentUpon>frmVisualizarDescricao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodigoBarras\frmCodigoBarras.resx">
+      <DependentUpon>frmCodigoBarras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmMD5.resx">
+      <DependentUpon>frmMD5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmSHA1.resx">
+      <DependentUpon>frmSHA1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmSHA256.resx">
+      <DependentUpon>frmSHA256.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmSHA384.resx">
+      <DependentUpon>frmSHA384.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmSHA512.resx">
+      <DependentUpon>frmSHA512.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esteganografia\frmEspacoEmBranco.resx">
+      <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarregar.resx">
+      <DependentUpon>frmCarregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmCifraCesar.resx">
+      <DependentUpon>frmCifraCesar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualizarDescricao.resx">
+      <DependentUpon>frmVisualizarDescricao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1938.49\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1938.49\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1938.49\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1938.49\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
