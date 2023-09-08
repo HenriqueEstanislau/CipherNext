@@ -62,32 +62,29 @@ namespace CipherNext.Esteganografia
                 {
                     if (string.IsNullOrEmpty(token))
                     {
-                        // Se o token for vazio, é um espaço em branco
                         text.Append(' ');
                     }
                     else if (token == "~")
                     {
-                        // Se o token for "~", represente como "\t"
                         text.Append('\t');
                     }
                     else
                     {
-                        // Caso contrário, procure no dicionário a correspondência
                         foreach (var pair in whiteSpaceCodeDict)
                         {
                             if (token == pair.Value)
                             {
                                 text.Append(pair.Key);
-                                break; // Encerra o loop assim que encontrar a correspondência
+                                break;
                             }
                         }
                     }
                 }
 
-                text.AppendLine(); // Adicione uma nova linha para separar as linhas
+                text.AppendLine(); 
             }
 
-            return text.ToString().TrimEnd(); // Remova as quebras de linha finais
+            return text.ToString().TrimEnd(); 
         }
 
         private void btnDecifrar_Click(object sender, EventArgs e)
