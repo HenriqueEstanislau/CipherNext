@@ -69,6 +69,18 @@
     <Compile Include="CodigoBarras\frmCodigoBarras.Designer.cs">
       <DependentUpon>frmCodigoBarras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Criptografia\frmA1Z26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmA1Z26.Designer.cs">
+      <DependentUpon>frmA1Z26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criptografia\frmAtbash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmAtbash.Designer.cs">
+      <DependentUpon>frmAtbash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Criptografia\frmMD5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CodigoBarras\frmCodigoBarras.resx">
       <DependentUpon>frmCodigoBarras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmA1Z26.resx">
+      <DependentUpon>frmA1Z26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmAtbash.resx">
+      <DependentUpon>frmAtbash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Criptografia\frmMD5.resx">
       <DependentUpon>frmMD5.cs</DependentUpon>

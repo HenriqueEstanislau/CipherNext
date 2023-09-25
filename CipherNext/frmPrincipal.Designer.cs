@@ -35,7 +35,7 @@
             this.btnCodigoDeBarras = new System.Windows.Forms.Button();
             this.btnCodigoBarras = new System.Windows.Forms.Button();
             this.pnlEsteganografiaSubMenu = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnLSB = new System.Windows.Forms.Button();
             this.btnEspacoEmBranco = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.btnSHA1 = new System.Windows.Forms.Button();
             this.btnMD5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnA1Z26 = new System.Windows.Forms.Button();
+            this.btnAtbash = new System.Windows.Forms.Button();
             this.btnCifraCesar = new System.Windows.Forms.Button();
             this.btnCriptografia = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
@@ -158,7 +158,7 @@
             // pnlEsteganografiaSubMenu
             // 
             this.pnlEsteganografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlEsteganografiaSubMenu.Controls.Add(this.button2);
+            this.pnlEsteganografiaSubMenu.Controls.Add(this.btnLSB);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnEspacoEmBranco);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.button4);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.button5);
@@ -168,19 +168,19 @@
             this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 163);
             this.pnlEsteganografiaSubMenu.TabIndex = 4;
             // 
-            // button2
+            // btnLSB
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 120);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(239, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLSB.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLSB.FlatAppearance.BorderSize = 0;
+            this.btnLSB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLSB.Location = new System.Drawing.Point(0, 120);
+            this.btnLSB.Name = "btnLSB";
+            this.btnLSB.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnLSB.Size = new System.Drawing.Size(239, 40);
+            this.btnLSB.TabIndex = 4;
+            this.btnLSB.Text = "Least Significant Bit - LSB";
+            this.btnLSB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLSB.UseVisualStyleBackColor = true;
             // 
             // btnEspacoEmBranco
             // 
@@ -250,8 +250,8 @@
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnSHA1);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnMD5);
             this.pnlCriptografiaSubMenu.Controls.Add(this.button1);
-            this.pnlCriptografiaSubMenu.Controls.Add(this.button6);
-            this.pnlCriptografiaSubMenu.Controls.Add(this.button7);
+            this.pnlCriptografiaSubMenu.Controls.Add(this.btnA1Z26);
+            this.pnlCriptografiaSubMenu.Controls.Add(this.btnAtbash);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnCifraCesar);
             this.pnlCriptografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 295);
@@ -348,33 +348,35 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnA1Z26
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 80);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(239, 40);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "A1Z26";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnA1Z26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnA1Z26.FlatAppearance.BorderSize = 0;
+            this.btnA1Z26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnA1Z26.Location = new System.Drawing.Point(0, 80);
+            this.btnA1Z26.Name = "btnA1Z26";
+            this.btnA1Z26.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnA1Z26.Size = new System.Drawing.Size(239, 40);
+            this.btnA1Z26.TabIndex = 3;
+            this.btnA1Z26.Text = "A1Z26";
+            this.btnA1Z26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnA1Z26.UseVisualStyleBackColor = true;
+            this.btnA1Z26.Click += new System.EventHandler(this.btnA1Z26_Click);
             // 
-            // button7
+            // btnAtbash
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 40);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(239, 40);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Atbash";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnAtbash.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAtbash.FlatAppearance.BorderSize = 0;
+            this.btnAtbash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtbash.Location = new System.Drawing.Point(0, 40);
+            this.btnAtbash.Name = "btnAtbash";
+            this.btnAtbash.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnAtbash.Size = new System.Drawing.Size(239, 40);
+            this.btnAtbash.TabIndex = 2;
+            this.btnAtbash.Text = "Atbash";
+            this.btnAtbash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtbash.UseVisualStyleBackColor = true;
+            this.btnAtbash.Click += new System.EventHandler(this.btnAtbash_Click);
             // 
             // btnCifraCesar
             // 
@@ -509,15 +511,15 @@
         private System.Windows.Forms.Button btnCodigoDeBarras;
         private System.Windows.Forms.Button btnCodigoBarras;
         private System.Windows.Forms.Panel pnlEsteganografiaSubMenu;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLSB;
         private System.Windows.Forms.Button btnEspacoEmBranco;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnEsteganografia;
         private System.Windows.Forms.Panel pnlCriptografiaSubMenu;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnA1Z26;
+        private System.Windows.Forms.Button btnAtbash;
         private System.Windows.Forms.Button btnCifraCesar;
         private System.Windows.Forms.Button btnCriptografia;
         private System.Windows.Forms.Panel pnlContainer;

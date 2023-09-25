@@ -135,5 +135,17 @@ namespace CipherNext
             openContainer(new frmEspacoEmBranco());
             hideSubMenu();
         }
+
+        private void btnAtbash_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmAtbash());
+            hideSubMenu();
+        }
+
+        private void btnA1Z26_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmA1Z26());
+            hideSubMenu();
+        }
     }
 }

@@ -39,7 +39,7 @@ namespace CipherNext.Esteganografia
                 }
                 else if (c == '\t')
                 {
-                    whiteSpaceCode += "~\n"; // Use "~" para representar "\t"
+                    whiteSpaceCode += "~\n"; 
                 }
                 else
                 {
