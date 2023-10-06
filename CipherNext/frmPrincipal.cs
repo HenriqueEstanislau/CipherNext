@@ -147,5 +147,17 @@ namespace CipherNext
             openContainer(new frmA1Z26());
             hideSubMenu();
         }
+
+        private void btnCifraVigenere_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCifraVigenere());
+            hideSubMenu();
+        }
+
+        private void btnBlocoNotas_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmBlocoNotas());
+            hideSubMenu();
+        }
     }
 }

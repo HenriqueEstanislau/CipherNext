@@ -31,5 +31,10 @@ namespace CipherNext.CodigoBarras
                 pboxImagem.Image = barcodeWriter.Write(texto);
             }
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -81,6 +81,12 @@
     <Compile Include="Criptografia\frmAtbash.Designer.cs">
       <DependentUpon>frmAtbash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Criptografia\frmCifraVigenere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmCifraVigenere.Designer.cs">
+      <DependentUpon>frmCifraVigenere.cs</DependentUpon>
+    </Compile>
     <Compile Include="Criptografia\frmMD5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="Criptografia\frmSHA512.Designer.cs">
       <DependentUpon>frmSHA512.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Esteganografia\frmBlocoNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esteganografia\frmBlocoNotas.Designer.cs">
+      <DependentUpon>frmBlocoNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="Esteganografia\frmEspacoEmBranco.cs">
       <SubType>Form</SubType>
@@ -152,6 +164,9 @@
     <EmbeddedResource Include="Criptografia\frmAtbash.resx">
       <DependentUpon>frmAtbash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmCifraVigenere.resx">
+      <DependentUpon>frmCifraVigenere.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Criptografia\frmMD5.resx">
       <DependentUpon>frmMD5.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Criptografia\frmSHA512.resx">
       <DependentUpon>frmSHA512.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esteganografia\frmBlocoNotas.resx">
+      <DependentUpon>frmBlocoNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Esteganografia\frmEspacoEmBranco.resx">
       <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>
