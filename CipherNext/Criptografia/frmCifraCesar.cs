@@ -35,7 +35,7 @@ namespace CipherNext
                 return;
             }
             string textoOriginal = rtxtTexto.Text;
-            int chave = int.Parse(txtChave.Text) % 26; // Garante que a chave seja um número entre 0 e 25
+            int chave = int.Parse(txtChave.Text) % 26; 
 
             string textoCriptografado = "";
 
@@ -57,10 +57,8 @@ namespace CipherNext
 
         private void txtChave_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //Se a tecla digitada não for número e nem backspace
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != 08)
             {
-                //Atribui True no Handled para cancelar o evento
                 e.Handled = true;
             }
         }
@@ -78,7 +76,7 @@ namespace CipherNext
                 return;
             }
             string textoCriptografado = rtxtCriptografado.Text;
-            int chave = int.Parse(txtChave.Text) % 26; // Garante que a chave seja um número entre 0 e 25
+            int chave = int.Parse(txtChave.Text) % 26; 
             string textoDecifrado = "";
 
             foreach (char caractere in textoCriptografado)

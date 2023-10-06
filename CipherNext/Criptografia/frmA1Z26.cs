@@ -56,7 +56,7 @@ namespace CipherNext.Criptografia
                     }
                     else
                     {
-                        decryptedText += "?"; // Indica um valor inválido
+                        decryptedText += "?";
                     }
                 }
                 else
