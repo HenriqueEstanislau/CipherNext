@@ -1,5 +1,4 @@
-﻿using CipherNext.CodigoBarras;
-using CipherNext.Criptografia;
+﻿using CipherNext.Criptografia;
 using CipherNext.Esteganografia;
 using System;
 using System.Collections.Generic;
@@ -24,7 +23,6 @@ namespace CipherNext
         {
             pnlCriptografiaSubMenu.Visible = false;
             pnlEsteganografiaSubMenu.Visible = false;
-            pnlCodigoBarrasSubMenu.Visible = false;
         }
         private void hideSubMenu()
         {
@@ -35,10 +33,6 @@ namespace CipherNext
             if (pnlEsteganografiaSubMenu.Visible == true)
             {
                 pnlEsteganografiaSubMenu.Visible = false;
-            }
-            if (pnlCodigoBarrasSubMenu.Visible == true)
-            {
-                pnlCodigoBarrasSubMenu.Visible = false;
             }
         }
         private void showSubMenu(Panel subMenu)
@@ -68,10 +62,6 @@ namespace CipherNext
         private void btnEsteganografia_Click(object sender, EventArgs e)
         {
             showSubMenu(pnlEsteganografiaSubMenu);
-        }
-        private void btnCodigoBarras_Click(object sender, EventArgs e)
-        {
-            showSubMenu(pnlCodigoBarrasSubMenu);
         }
 
         private Form activeForm = null;
@@ -123,13 +113,6 @@ namespace CipherNext
             openContainer(new frmSHA512());
             hideSubMenu();
         }
-
-        private void btnCodigoDeBarras_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmCodigoBarras());
-            hideSubMenu();
-        }
-
         private void btnEspacoEmBranco_Click(object sender, EventArgs e)
         {
             openContainer(new frmEspacoEmBranco());

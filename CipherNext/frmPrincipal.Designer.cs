@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlMenuLateral = new System.Windows.Forms.Panel();
-            this.btnDicasSeguranca = new System.Windows.Forms.Button();
-            this.pnlCodigoBarrasSubMenu = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.btnCodigoDeBarras = new System.Windows.Forms.Button();
-            this.btnCodigoBarras = new System.Windows.Forms.Button();
             this.pnlEsteganografiaSubMenu = new System.Windows.Forms.Panel();
             this.btnLSB = new System.Windows.Forms.Button();
             this.btnEspacoEmBranco = new System.Windows.Forms.Button();
@@ -58,7 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMenuLateral.SuspendLayout();
-            this.pnlCodigoBarrasSubMenu.SuspendLayout();
             this.pnlEsteganografiaSubMenu.SuspendLayout();
             this.pnlCriptografiaSubMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -69,9 +63,6 @@
             // 
             this.pnlMenuLateral.AutoScroll = true;
             this.pnlMenuLateral.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnlMenuLateral.Controls.Add(this.btnDicasSeguranca);
-            this.pnlMenuLateral.Controls.Add(this.pnlCodigoBarrasSubMenu);
-            this.pnlMenuLateral.Controls.Add(this.btnCodigoBarras);
             this.pnlMenuLateral.Controls.Add(this.pnlEsteganografiaSubMenu);
             this.pnlMenuLateral.Controls.Add(this.btnEsteganografia);
             this.pnlMenuLateral.Controls.Add(this.pnlCriptografiaSubMenu);
@@ -83,77 +74,6 @@
             this.pnlMenuLateral.Name = "pnlMenuLateral";
             this.pnlMenuLateral.Size = new System.Drawing.Size(256, 643);
             this.pnlMenuLateral.TabIndex = 0;
-            // 
-            // btnDicasSeguranca
-            // 
-            this.btnDicasSeguranca.BackColor = System.Drawing.Color.MistyRose;
-            this.btnDicasSeguranca.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDicasSeguranca.FlatAppearance.BorderSize = 0;
-            this.btnDicasSeguranca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDicasSeguranca.Location = new System.Drawing.Point(0, 1008);
-            this.btnDicasSeguranca.Name = "btnDicasSeguranca";
-            this.btnDicasSeguranca.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnDicasSeguranca.Size = new System.Drawing.Size(239, 45);
-            this.btnDicasSeguranca.TabIndex = 8;
-            this.btnDicasSeguranca.Text = "Dicas de Segurança";
-            this.btnDicasSeguranca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDicasSeguranca.UseVisualStyleBackColor = false;
-            // 
-            // pnlCodigoBarrasSubMenu
-            // 
-            this.pnlCodigoBarrasSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlCodigoBarrasSubMenu.Controls.Add(this.button13);
-            this.pnlCodigoBarrasSubMenu.Controls.Add(this.btnCodigoDeBarras);
-            this.pnlCodigoBarrasSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCodigoBarrasSubMenu.Location = new System.Drawing.Point(0, 924);
-            this.pnlCodigoBarrasSubMenu.Name = "pnlCodigoBarrasSubMenu";
-            this.pnlCodigoBarrasSubMenu.Size = new System.Drawing.Size(239, 84);
-            this.pnlCodigoBarrasSubMenu.TabIndex = 6;
-            // 
-            // button13
-            // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(0, 40);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(239, 40);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "QR Code";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // btnCodigoDeBarras
-            // 
-            this.btnCodigoDeBarras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCodigoDeBarras.FlatAppearance.BorderSize = 0;
-            this.btnCodigoDeBarras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCodigoDeBarras.Location = new System.Drawing.Point(0, 0);
-            this.btnCodigoDeBarras.Name = "btnCodigoDeBarras";
-            this.btnCodigoDeBarras.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCodigoDeBarras.Size = new System.Drawing.Size(239, 40);
-            this.btnCodigoDeBarras.TabIndex = 1;
-            this.btnCodigoDeBarras.Text = "Codigo de Barras";
-            this.btnCodigoDeBarras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCodigoDeBarras.UseVisualStyleBackColor = true;
-            this.btnCodigoDeBarras.Click += new System.EventHandler(this.btnCodigoDeBarras_Click);
-            // 
-            // btnCodigoBarras
-            // 
-            this.btnCodigoBarras.BackColor = System.Drawing.Color.MistyRose;
-            this.btnCodigoBarras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCodigoBarras.FlatAppearance.BorderSize = 0;
-            this.btnCodigoBarras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCodigoBarras.Location = new System.Drawing.Point(0, 879);
-            this.btnCodigoBarras.Name = "btnCodigoBarras";
-            this.btnCodigoBarras.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCodigoBarras.Size = new System.Drawing.Size(239, 45);
-            this.btnCodigoBarras.TabIndex = 7;
-            this.btnCodigoBarras.Text = "Codigo de Barras";
-            this.btnCodigoBarras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCodigoBarras.UseVisualStyleBackColor = false;
-            this.btnCodigoBarras.Click += new System.EventHandler(this.btnCodigoBarras_Click);
             // 
             // pnlEsteganografiaSubMenu
             // 
@@ -491,7 +411,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
             this.pnlMenuLateral.ResumeLayout(false);
-            this.pnlCodigoBarrasSubMenu.ResumeLayout(false);
             this.pnlEsteganografiaSubMenu.ResumeLayout(false);
             this.pnlCriptografiaSubMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
@@ -507,11 +426,6 @@
         private System.Windows.Forms.Panel pnlMenuLateral;
         private System.Windows.Forms.Button btnPrincipal;
         private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Button btnDicasSeguranca;
-        private System.Windows.Forms.Panel pnlCodigoBarrasSubMenu;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button btnCodigoDeBarras;
-        private System.Windows.Forms.Button btnCodigoBarras;
         private System.Windows.Forms.Panel pnlEsteganografiaSubMenu;
         private System.Windows.Forms.Button btnLSB;
         private System.Windows.Forms.Button btnEspacoEmBranco;

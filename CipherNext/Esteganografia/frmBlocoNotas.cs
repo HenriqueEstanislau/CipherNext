@@ -15,50 +15,36 @@ namespace CipherNext.Esteganografia
 
     public partial class frmBlocoNotas : Form
     {
-        private string selectedPath = "";
+        private string selectedPath = "", pathImage = "", extensionImage = "";
         public frmBlocoNotas()
         {
             InitializeComponent();
         }
-        
-        private void btnSelecionarDiretorio_Click(object sender, EventArgs e)
+
+        private string CriarArquivoScriptTemporario(string[] textUser)
         {
-            //FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            //folderBrowserDialog.Description = "Selecione um diretório";
-            //DialogResult result = folderBrowserDialog.ShowDialog();
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.Title = "Selecione um diretório";
-                openFileDialog.CheckFileExists = false;
-                openFileDialog.CheckPathExists = true;
-                openFileDialog.ValidateNames = false;
-
-                DialogResult result = openFileDialog.ShowDialog();
-
-                if (result == DialogResult.OK)
-                {
-                    // Obtém o caminho da pasta selecionada
-                    selectedPath = Path.GetDirectoryName(openFileDialog.FileName);
-
-                    // Faça o que precisa fazer com o caminho do diretório selecionado
-                    lblDiretorio.Text = "Diretório selecionado: " + selectedPath;
-                }
-                //if (result == DialogResult.OK)
-                //{
-                //    selectedPath = folderBrowserDialog.SelectedPath;
-                //    lblDiretorio.Text = "Diretório selecionado: " + selectedPath;
-                //}
-            }
-        }
-
-        private string CreateTempScriptFile(string[] commandLines)
-        {
-            string tempScriptPath = Path.Combine(Path.GetTempPath(), "temp_script.bat");
+            string tempScriptPath = Path.Combine(Path.GetTempPath(), "CipherNext-TempScript.bat");
 
             try
             {
-                // Write command lines to the temporary script file
-                File.WriteAllLines(tempScriptPath, commandLines);
+                File.WriteAllLines(tempScriptPath, textUser);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao criar o arquivo de texto temporário: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+
+            return tempScriptPath;
+        }
+
+        private string CriarArquivoTextoTemporario(string[] commandLines)
+        {
+            string tempTexttPath = Path.Combine(Path.GetTempPath(), "CipherNext-TempText.txt");
+
+            try
+            {
+                File.WriteAllLines(tempTexttPath, commandLines);
             }
             catch (Exception ex)
             {
@@ -66,11 +52,11 @@ namespace CipherNext.Esteganografia
                 return null;
             }
 
-            return tempScriptPath;
+            return tempTexttPath;
         }
-        private void ExecuteCommand(string[] commandLines)
+        private void ExecutarComando(string[] commandLines)
         {
-            string tempScriptPath = CreateTempScriptFile(commandLines);
+            string tempScriptPath = CriarArquivoScriptTemporario(commandLines);
 
             if (tempScriptPath != null)
             {
@@ -83,32 +69,58 @@ namespace CipherNext.Esteganografia
                     process.StartInfo.CreateNoWindow = true;
 
                     process.Start();
-                    string output = process.StandardOutput.ReadToEnd();  // Read the output from the command
+                    string output = process.StandardOutput.ReadToEnd();
                     process.WaitForExit();
 
                     MessageBox.Show("Output:\n" + output, "Command Execution Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred while executing the command: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Um erro occoreu enquanto tentava executar: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
-                    // Delete the temporary script file after execution
-                    File.Delete(tempScriptPath);
+                    if (File.Exists(tempScriptPath))
+                        File.Delete(tempScriptPath);
                 }
             }
         }
 
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnExecutar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"cd {selectedPath}");
-            string[] commandLines = {
-                $"cd {selectedPath}",
-                "echo Olá, mundo! > exemplo.txt"
-            };
 
-            ExecuteCommand(commandLines);
+            string[] userText = { "\n\n\n" + rtxtTexto.Text };
+            string tempScriptPath = CriarArquivoTextoTemporario(userText); 
+            MessageBox.Show("MESAGEM: " + tempScriptPath);
+            string[] commandLines = { $"copy /b {selectedPath} + {tempScriptPath} {pathImage}\\documento{extensionImage}" };
+
+            ExecutarComando(commandLines);
+        }
+
+        private void btnSelecionarImagem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Selecione um diretório";
+                openFileDialog.CheckFileExists = true;
+                openFileDialog.CheckPathExists = true;
+                openFileDialog.ValidateNames = true;
+
+                DialogResult result = openFileDialog.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    pathImage = Path.GetDirectoryName(openFileDialog.FileName);
+                    extensionImage = Path.GetExtension(openFileDialog.FileName);
+                    selectedPath = Path.GetFullPath(openFileDialog.FileName);
+                    txtDiretorioImagem.Text = selectedPath;
+                }
+            }
         }
     }
 }
