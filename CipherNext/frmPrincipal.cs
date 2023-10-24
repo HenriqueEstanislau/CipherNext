@@ -148,5 +148,11 @@ namespace CipherNext
             openContainer(new frmCodigoMorse());
             hideSubMenu();
         }
+
+        private void btnCodigoBinario_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCodigoBinario());
+            hideSubMenu();
+        }
     }
 }
