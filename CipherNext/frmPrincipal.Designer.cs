@@ -32,10 +32,12 @@
             this.pnlEsteganografiaSubMenu = new System.Windows.Forms.Panel();
             this.btnLSB = new System.Windows.Forms.Button();
             this.btnEspacoEmBranco = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnArquivoZip = new System.Windows.Forms.Button();
             this.btnBlocoNotas = new System.Windows.Forms.Button();
             this.btnEsteganografia = new System.Windows.Forms.Button();
             this.pnlCriptografiaSubMenu = new System.Windows.Forms.Panel();
+            this.btnCodigoBinario = new System.Windows.Forms.Button();
+            this.btnCodigoMorse = new System.Windows.Forms.Button();
             this.btnSHA512 = new System.Windows.Forms.Button();
             this.btnSHA384 = new System.Windows.Forms.Button();
             this.btnSHA256 = new System.Windows.Forms.Button();
@@ -52,8 +54,6 @@
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCodigoMorse = new System.Windows.Forms.Button();
-            this.btnCodigoBinario = new System.Windows.Forms.Button();
             this.pnlMenuLateral.SuspendLayout();
             this.pnlEsteganografiaSubMenu.SuspendLayout();
             this.pnlCriptografiaSubMenu.SuspendLayout();
@@ -82,7 +82,7 @@
             this.pnlEsteganografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnLSB);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnEspacoEmBranco);
-            this.pnlEsteganografiaSubMenu.Controls.Add(this.button4);
+            this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 783);
@@ -119,19 +119,20 @@
             this.btnEspacoEmBranco.UseVisualStyleBackColor = true;
             this.btnEspacoEmBranco.Click += new System.EventHandler(this.btnEspacoEmBranco_Click);
             // 
-            // button4
+            // btnArquivoZip
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 40);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(239, 40);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Winrar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnArquivoZip.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnArquivoZip.FlatAppearance.BorderSize = 0;
+            this.btnArquivoZip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArquivoZip.Location = new System.Drawing.Point(0, 40);
+            this.btnArquivoZip.Name = "btnArquivoZip";
+            this.btnArquivoZip.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnArquivoZip.Size = new System.Drawing.Size(239, 40);
+            this.btnArquivoZip.TabIndex = 2;
+            this.btnArquivoZip.Text = "Arquivo Zip";
+            this.btnArquivoZip.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArquivoZip.UseVisualStyleBackColor = true;
+            this.btnArquivoZip.Click += new System.EventHandler(this.btnArquivoZip_Click);
             // 
             // btnBlocoNotas
             // 
@@ -183,6 +184,36 @@
             this.pnlCriptografiaSubMenu.Name = "pnlCriptografiaSubMenu";
             this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 443);
             this.pnlCriptografiaSubMenu.TabIndex = 2;
+            // 
+            // btnCodigoBinario
+            // 
+            this.btnCodigoBinario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCodigoBinario.FlatAppearance.BorderSize = 0;
+            this.btnCodigoBinario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCodigoBinario.Location = new System.Drawing.Point(0, 400);
+            this.btnCodigoBinario.Name = "btnCodigoBinario";
+            this.btnCodigoBinario.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCodigoBinario.Size = new System.Drawing.Size(239, 40);
+            this.btnCodigoBinario.TabIndex = 11;
+            this.btnCodigoBinario.Text = "Código Binário";
+            this.btnCodigoBinario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCodigoBinario.UseVisualStyleBackColor = true;
+            this.btnCodigoBinario.Click += new System.EventHandler(this.btnCodigoBinario_Click);
+            // 
+            // btnCodigoMorse
+            // 
+            this.btnCodigoMorse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCodigoMorse.FlatAppearance.BorderSize = 0;
+            this.btnCodigoMorse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCodigoMorse.Location = new System.Drawing.Point(0, 360);
+            this.btnCodigoMorse.Name = "btnCodigoMorse";
+            this.btnCodigoMorse.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCodigoMorse.Size = new System.Drawing.Size(239, 40);
+            this.btnCodigoMorse.TabIndex = 10;
+            this.btnCodigoMorse.Text = "Código Morse";
+            this.btnCodigoMorse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCodigoMorse.UseVisualStyleBackColor = true;
+            this.btnCodigoMorse.Click += new System.EventHandler(this.btnCodigoMorse_Click);
             // 
             // btnSHA512
             // 
@@ -400,36 +431,6 @@
             this.panel1.Size = new System.Drawing.Size(1264, 38);
             this.panel1.TabIndex = 2;
             // 
-            // btnCodigoMorse
-            // 
-            this.btnCodigoMorse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCodigoMorse.FlatAppearance.BorderSize = 0;
-            this.btnCodigoMorse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCodigoMorse.Location = new System.Drawing.Point(0, 360);
-            this.btnCodigoMorse.Name = "btnCodigoMorse";
-            this.btnCodigoMorse.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCodigoMorse.Size = new System.Drawing.Size(239, 40);
-            this.btnCodigoMorse.TabIndex = 10;
-            this.btnCodigoMorse.Text = "Código Morse";
-            this.btnCodigoMorse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCodigoMorse.UseVisualStyleBackColor = true;
-            this.btnCodigoMorse.Click += new System.EventHandler(this.btnCodigoMorse_Click);
-            // 
-            // btnCodigoBinario
-            // 
-            this.btnCodigoBinario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCodigoBinario.FlatAppearance.BorderSize = 0;
-            this.btnCodigoBinario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCodigoBinario.Location = new System.Drawing.Point(0, 400);
-            this.btnCodigoBinario.Name = "btnCodigoBinario";
-            this.btnCodigoBinario.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCodigoBinario.Size = new System.Drawing.Size(239, 40);
-            this.btnCodigoBinario.TabIndex = 11;
-            this.btnCodigoBinario.Text = "Código Binário";
-            this.btnCodigoBinario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCodigoBinario.UseVisualStyleBackColor = true;
-            this.btnCodigoBinario.Click += new System.EventHandler(this.btnCodigoBinario_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,7 +464,7 @@
         private System.Windows.Forms.Panel pnlEsteganografiaSubMenu;
         private System.Windows.Forms.Button btnLSB;
         private System.Windows.Forms.Button btnEspacoEmBranco;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnArquivoZip;
         private System.Windows.Forms.Button btnBlocoNotas;
         private System.Windows.Forms.Button btnEsteganografia;
         private System.Windows.Forms.Panel pnlCriptografiaSubMenu;

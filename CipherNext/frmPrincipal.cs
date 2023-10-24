@@ -154,5 +154,11 @@ namespace CipherNext
             openContainer(new frmCodigoBinario());
             hideSubMenu();
         }
+
+        private void btnArquivoZip_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmArquivoZip());
+            hideSubMenu();
+        }
     }
 }
