@@ -81,6 +81,12 @@
     <Compile Include="Criptografia\frmCifraVigenere.Designer.cs">
       <DependentUpon>frmCifraVigenere.cs</DependentUpon>
     </Compile>
+    <Compile Include="Criptografia\frmCodigoMorse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criptografia\frmCodigoMorse.Designer.cs">
+      <DependentUpon>frmCodigoMorse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Criptografia\frmMD5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Criptografia\frmCifraVigenere.resx">
       <DependentUpon>frmCifraVigenere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criptografia\frmCodigoMorse.resx">
+      <DependentUpon>frmCodigoMorse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Criptografia\frmMD5.resx">
       <DependentUpon>frmMD5.cs</DependentUpon>

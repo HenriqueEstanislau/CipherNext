@@ -52,6 +52,7 @@
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCodigoMorse = new System.Windows.Forms.Button();
             this.pnlMenuLateral.SuspendLayout();
             this.pnlEsteganografiaSubMenu.SuspendLayout();
             this.pnlCriptografiaSubMenu.SuspendLayout();
@@ -83,7 +84,7 @@
             this.pnlEsteganografiaSubMenu.Controls.Add(this.button4);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 716);
+            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 743);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
             this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 163);
             this.pnlEsteganografiaSubMenu.TabIndex = 4;
@@ -152,7 +153,7 @@
             this.btnEsteganografia.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEsteganografia.FlatAppearance.BorderSize = 0;
             this.btnEsteganografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEsteganografia.Location = new System.Drawing.Point(0, 671);
+            this.btnEsteganografia.Location = new System.Drawing.Point(0, 698);
             this.btnEsteganografia.Name = "btnEsteganografia";
             this.btnEsteganografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEsteganografia.Size = new System.Drawing.Size(239, 45);
@@ -165,6 +166,7 @@
             // pnlCriptografiaSubMenu
             // 
             this.pnlCriptografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlCriptografiaSubMenu.Controls.Add(this.btnCodigoMorse);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnSHA512);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnSHA384);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnSHA256);
@@ -177,7 +179,7 @@
             this.pnlCriptografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 295);
             this.pnlCriptografiaSubMenu.Name = "pnlCriptografiaSubMenu";
-            this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 376);
+            this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 403);
             this.pnlCriptografiaSubMenu.TabIndex = 2;
             // 
             // btnSHA512
@@ -396,6 +398,21 @@
             this.panel1.Size = new System.Drawing.Size(1264, 38);
             this.panel1.TabIndex = 2;
             // 
+            // btnCodigoMorse
+            // 
+            this.btnCodigoMorse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCodigoMorse.FlatAppearance.BorderSize = 0;
+            this.btnCodigoMorse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCodigoMorse.Location = new System.Drawing.Point(0, 360);
+            this.btnCodigoMorse.Name = "btnCodigoMorse";
+            this.btnCodigoMorse.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCodigoMorse.Size = new System.Drawing.Size(239, 40);
+            this.btnCodigoMorse.TabIndex = 10;
+            this.btnCodigoMorse.Text = "Código Morse";
+            this.btnCodigoMorse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCodigoMorse.UseVisualStyleBackColor = true;
+            this.btnCodigoMorse.Click += new System.EventHandler(this.btnCodigoMorse_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,6 +464,7 @@
         private System.Windows.Forms.Button btnSHA256;
         private System.Windows.Forms.Button btnSHA384;
         private System.Windows.Forms.Button btnSHA512;
+        private System.Windows.Forms.Button btnCodigoMorse;
     }
 }
 

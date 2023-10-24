@@ -142,5 +142,11 @@ namespace CipherNext
             openContainer(new frmBlocoNotas());
             hideSubMenu();
         }
+
+        private void btnCodigoMorse_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCodigoMorse());
+            hideSubMenu();
+        }
     }
 }
