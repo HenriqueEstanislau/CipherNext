@@ -14,6 +14,7 @@ namespace CipherNext
 {
     public partial class frmPrincipal : Form
     {
+        bool HashMenuActive = false;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -21,14 +22,26 @@ namespace CipherNext
         }
         private void customizeDesign()
         {
+            pnlPrincipalSubMenu.Visible = false;
             pnlCriptografiaSubMenu.Visible = false;
             pnlEsteganografiaSubMenu.Visible = false;
+            pnlHashSubMenu.Visible = false;
         }
         private void hideSubMenu()
         {
-            if(pnlCriptografiaSubMenu.Visible == true)
+            if (pnlPrincipalSubMenu.Visible == true)
+            {
+                pnlPrincipalSubMenu.Visible = false;
+            }
+            if (pnlCriptografiaSubMenu.Visible == true)
             {
                 pnlCriptografiaSubMenu.Visible = false;
+                if (HashMenuActive == true)
+                {
+                    pnlHashSubMenu.Visible = false;
+                    HashMenuActive = false;
+                    pnlCriptografiaSubMenu.Size = new Size(pnlCriptografiaSubMenu.Size.Width, pnlCriptografiaSubMenu.Size.Height - pnlHashSubMenu.Size.Height);
+                }
             }
             if (pnlEsteganografiaSubMenu.Visible == true)
             {
@@ -46,22 +59,6 @@ namespace CipherNext
             {
                 subMenu.Visible = false;
             }
-        }
-
-        private void btnCriptografia_Click(object sender, EventArgs e)
-        {
-            showSubMenu(pnlCriptografiaSubMenu);
-        }
-
-        private void btnCifraCesar_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmCifraCesar());
-            hideSubMenu();
-        }
-
-        private void btnEsteganografia_Click(object sender, EventArgs e)
-        {
-            showSubMenu(pnlEsteganografiaSubMenu);
         }
 
         private Form activeForm = null;
@@ -83,7 +80,77 @@ namespace CipherNext
         {
             Application.Exit();
         }
+        
+        //
+        // Main Menus
+        //
 
+        private void btnPrincipal_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pnlPrincipalSubMenu);
+        }
+
+        private void btnCriptografia_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pnlCriptografiaSubMenu);
+        }
+
+        private void btnEsteganografia_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pnlEsteganografiaSubMenu);
+        }
+        private void btnHash_Click(object sender, EventArgs e)
+        {
+            if (HashMenuActive == true)
+            {
+                pnlHashSubMenu.Visible = false;
+                HashMenuActive = false;
+                pnlCriptografiaSubMenu.Size = new Size(pnlCriptografiaSubMenu.Size.Width, pnlCriptografiaSubMenu.Size.Height - pnlHashSubMenu.Size.Height);
+            } else
+            {
+                pnlHashSubMenu.Visible = true;
+                HashMenuActive = true;
+                pnlCriptografiaSubMenu.Size = new Size(pnlCriptografiaSubMenu.Size.Width, pnlCriptografiaSubMenu.Size.Height + pnlHashSubMenu.Size.Height);
+            }
+        }
+        //
+        // Buttons
+        //
+        private void btnA1Z26_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmA1Z26());
+            hideSubMenu();
+        }
+
+        private void btnAtbash_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmAtbash());
+            hideSubMenu();
+        }
+        private void btnCifraCesar_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCifraCesar());
+            hideSubMenu();
+        }
+
+        private void btnCifraVigenere_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCifraVigenere());
+            hideSubMenu();
+        }
+
+        private void btnCodigoBinario_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCodigoBinario());
+            hideSubMenu();
+        }
+
+        private void btnCodigoMorse_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCodigoMorse());
+            hideSubMenu();
+        }
+        // Hash
         private void btnMD5_Click(object sender, EventArgs e)
         {
             openContainer(new frmMD5());
@@ -113,52 +180,29 @@ namespace CipherNext
             openContainer(new frmSHA512());
             hideSubMenu();
         }
+        //Esteganografia
+        private void btnBlocoNotas_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmBlocoNotas());
+            hideSubMenu();
+        }
+        private void btnArquivoZip_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmArquivoZip());
+            hideSubMenu();
+        }
+
         private void btnEspacoEmBranco_Click(object sender, EventArgs e)
         {
             openContainer(new frmEspacoEmBranco());
             hideSubMenu();
         }
 
-        private void btnAtbash_Click(object sender, EventArgs e)
+        private void btnLSB_Click(object sender, EventArgs e)
         {
-            openContainer(new frmAtbash());
-            hideSubMenu();
+            //openContainer(new frmLSB());
+            //hideSubMenu();
         }
 
-        private void btnA1Z26_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmA1Z26());
-            hideSubMenu();
-        }
-
-        private void btnCifraVigenere_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmCifraVigenere());
-            hideSubMenu();
-        }
-
-        private void btnBlocoNotas_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmBlocoNotas());
-            hideSubMenu();
-        }
-
-        private void btnCodigoMorse_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmCodigoMorse());
-            hideSubMenu();
-        }
-
-        private void btnCodigoBinario_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmCodigoBinario());
-            hideSubMenu();
-        }
-
-        private void btnArquivoZip_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmArquivoZip());
-            hideSubMenu();
-        }
     }
 }

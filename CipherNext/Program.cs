@@ -16,8 +16,8 @@ namespace CipherNext
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmCarregar());
-            Application.Run(new frmPrincipal());
+            Application.Run(new frmCarregar());
+            //Application.Run(new frmPrincipal());
         }
     }
 }
