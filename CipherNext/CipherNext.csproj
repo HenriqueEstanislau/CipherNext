@@ -160,6 +160,12 @@
     <Compile Include="Esteganografia\frmBlocoNotas.Designer.cs">
       <DependentUpon>frmBlocoNotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Esteganografia\frmCapsLockSteg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esteganografia\frmCapsLockSteg.Designer.cs">
+      <DependentUpon>frmCapsLockSteg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Esteganografia\frmEspacoEmBranco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Esteganografia\frmBlocoNotas.resx">
       <DependentUpon>frmBlocoNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esteganografia\frmCapsLockSteg.resx">
+      <DependentUpon>frmCapsLockSteg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Esteganografia\frmEspacoEmBranco.resx">
       <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>

@@ -101,6 +101,7 @@
             this.pnlDec030 = new System.Windows.Forms.Panel();
             this.pnlDec029 = new System.Windows.Forms.Panel();
             this.pnlDec028 = new System.Windows.Forms.Panel();
+            this.btnCapsLockSteg = new System.Windows.Forms.Button();
             this.pnlFooterBar.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -494,6 +495,7 @@
             // pnlEsteganografiaSubMenu
             // 
             this.pnlEsteganografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlEsteganografiaSubMenu.Controls.Add(this.btnCapsLockSteg);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnLSB);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnEspacoEmBranco);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
@@ -501,7 +503,7 @@
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 579);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
-            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 163);
+            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 204);
             this.pnlEsteganografiaSubMenu.TabIndex = 27;
             // 
             // btnLSB
@@ -1037,6 +1039,23 @@
             this.pnlDec028.Size = new System.Drawing.Size(20, 20);
             this.pnlDec028.TabIndex = 8;
             // 
+            // btnCapsLockSteg
+            // 
+            this.btnCapsLockSteg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
+            this.btnCapsLockSteg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCapsLockSteg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapsLockSteg.FlatAppearance.BorderSize = 0;
+            this.btnCapsLockSteg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapsLockSteg.Location = new System.Drawing.Point(0, 160);
+            this.btnCapsLockSteg.Name = "btnCapsLockSteg";
+            this.btnCapsLockSteg.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCapsLockSteg.Size = new System.Drawing.Size(239, 40);
+            this.btnCapsLockSteg.TabIndex = 5;
+            this.btnCapsLockSteg.Text = "CapsLockSteg";
+            this.btnCapsLockSteg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapsLockSteg.UseVisualStyleBackColor = false;
+            this.btnCapsLockSteg.Click += new System.EventHandler(this.btnCapsLockSteg_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1144,6 +1163,7 @@
         private System.Windows.Forms.Button btnOqueeEsteganografia;
         private System.Windows.Forms.Button btnOqueeCriptografia;
         private System.Windows.Forms.Button btnCipherNext;
+        private System.Windows.Forms.Button btnCapsLockSteg;
     }
 }
 

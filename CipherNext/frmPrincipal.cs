@@ -61,6 +61,7 @@ namespace CipherNext
             }
         }
 
+
         private Form activeForm = null;
         private void openContainer(Form container)
         {
@@ -204,5 +205,10 @@ namespace CipherNext
             //hideSubMenu();
         }
 
+        private void btnCapsLockSteg_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCapsLockSteg());
+            hideSubMenu();
+        }
     }
 }
