@@ -204,8 +204,8 @@ namespace CipherNext
 
         private void btnLSB_Click(object sender, EventArgs e)
         {
-            //openContainer(new frmLSB());
-            //hideSubMenu();
+            openContainer(new frmLSB());
+            hideSubMenu();
         }
 
         private void btnCapsLockSteg_Click(object sender, EventArgs e)

@@ -178,6 +178,12 @@
     <Compile Include="Esteganografia\frmEspacoEmBranco.Designer.cs">
       <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Esteganografia\frmLSB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Esteganografia\frmLSB.Designer.cs">
+      <DependentUpon>frmLSB.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCarregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Esteganografia\frmEspacoEmBranco.resx">
       <DependentUpon>frmEspacoEmBranco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Esteganografia\frmLSB.resx">
+      <DependentUpon>frmLSB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarregar.resx">
       <DependentUpon>frmCarregar.cs</DependentUpon>
