@@ -1,5 +1,6 @@
 ﻿using CipherNext.Criptografia;
 using CipherNext.Esteganografia;
+using CipherNext.Principal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -220,6 +221,10 @@ namespace CipherNext
             hideSubMenu();
         }
 
-
+        private void btnCipherNext_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmCipherNextGeral());
+            hideSubMenu();
+        }
     }
 }

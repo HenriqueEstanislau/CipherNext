@@ -958,6 +958,7 @@
             this.btnCipherNext.Text = "CipherNext - Geral";
             this.btnCipherNext.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCipherNext.UseVisualStyleBackColor = false;
+            this.btnCipherNext.Click += new System.EventHandler(this.btnCipherNext_Click);
             // 
             // btnPrincipal
             // 
