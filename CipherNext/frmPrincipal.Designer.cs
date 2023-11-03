@@ -65,6 +65,7 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlMenuLateral = new System.Windows.Forms.Panel();
             this.pnlEsteganografiaSubMenu = new System.Windows.Forms.Panel();
+            this.btnCapsLockSteg = new System.Windows.Forms.Button();
             this.btnLSB = new System.Windows.Forms.Button();
             this.btnEspacoEmBranco = new System.Windows.Forms.Button();
             this.btnArquivoZip = new System.Windows.Forms.Button();
@@ -78,6 +79,7 @@
             this.btnSHA1 = new System.Windows.Forms.Button();
             this.btnMD5 = new System.Windows.Forms.Button();
             this.btnHash = new System.Windows.Forms.Button();
+            this.btnBase64 = new System.Windows.Forms.Button();
             this.btnCodigoMorse = new System.Windows.Forms.Button();
             this.btnCodigoBinario = new System.Windows.Forms.Button();
             this.btnCifraVigenere = new System.Windows.Forms.Button();
@@ -101,7 +103,6 @@
             this.pnlDec030 = new System.Windows.Forms.Panel();
             this.pnlDec029 = new System.Windows.Forms.Panel();
             this.pnlDec028 = new System.Windows.Forms.Panel();
-            this.btnCapsLockSteg = new System.Windows.Forms.Button();
             this.pnlFooterBar.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -501,10 +502,27 @@
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 579);
+            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 623);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
             this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 204);
             this.pnlEsteganografiaSubMenu.TabIndex = 27;
+            // 
+            // btnCapsLockSteg
+            // 
+            this.btnCapsLockSteg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
+            this.btnCapsLockSteg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCapsLockSteg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapsLockSteg.FlatAppearance.BorderSize = 0;
+            this.btnCapsLockSteg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapsLockSteg.Location = new System.Drawing.Point(0, 160);
+            this.btnCapsLockSteg.Name = "btnCapsLockSteg";
+            this.btnCapsLockSteg.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCapsLockSteg.Size = new System.Drawing.Size(239, 40);
+            this.btnCapsLockSteg.TabIndex = 5;
+            this.btnCapsLockSteg.Text = "CapsLockSteg";
+            this.btnCapsLockSteg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapsLockSteg.UseVisualStyleBackColor = false;
+            this.btnCapsLockSteg.Click += new System.EventHandler(this.btnCapsLockSteg_Click);
             // 
             // btnLSB
             // 
@@ -582,7 +600,7 @@
             this.btnEsteganografia.FlatAppearance.BorderSize = 0;
             this.btnEsteganografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEsteganografia.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEsteganografia.Location = new System.Drawing.Point(0, 534);
+            this.btnEsteganografia.Location = new System.Drawing.Point(0, 578);
             this.btnEsteganografia.Name = "btnEsteganografia";
             this.btnEsteganografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEsteganografia.Size = new System.Drawing.Size(239, 45);
@@ -597,6 +615,7 @@
             this.pnlCriptografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnlCriptografiaSubMenu.Controls.Add(this.pnlHashSubMenu);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnHash);
+            this.pnlCriptografiaSubMenu.Controls.Add(this.btnBase64);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnCodigoMorse);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnCodigoBinario);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnCifraVigenere);
@@ -606,7 +625,7 @@
             this.pnlCriptografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 254);
             this.pnlCriptografiaSubMenu.Name = "pnlCriptografiaSubMenu";
-            this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 280);
+            this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 324);
             this.pnlCriptografiaSubMenu.TabIndex = 24;
             // 
             // pnlHashSubMenu
@@ -618,10 +637,10 @@
             this.pnlHashSubMenu.Controls.Add(this.btnSHA1);
             this.pnlHashSubMenu.Controls.Add(this.btnMD5);
             this.pnlHashSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHashSubMenu.Location = new System.Drawing.Point(0, 280);
+            this.pnlHashSubMenu.Location = new System.Drawing.Point(0, 320);
             this.pnlHashSubMenu.Name = "pnlHashSubMenu";
             this.pnlHashSubMenu.Size = new System.Drawing.Size(239, 204);
-            this.pnlHashSubMenu.TabIndex = 27;
+            this.pnlHashSubMenu.TabIndex = 35;
             // 
             // btnSHA512
             // 
@@ -716,15 +735,32 @@
             this.btnHash.FlatAppearance.BorderSize = 0;
             this.btnHash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHash.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHash.Location = new System.Drawing.Point(0, 240);
+            this.btnHash.Location = new System.Drawing.Point(0, 280);
             this.btnHash.Name = "btnHash";
             this.btnHash.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHash.Size = new System.Drawing.Size(239, 40);
-            this.btnHash.TabIndex = 31;
+            this.btnHash.TabIndex = 36;
             this.btnHash.Text = "Funções Hashs";
             this.btnHash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHash.UseVisualStyleBackColor = false;
             this.btnHash.Click += new System.EventHandler(this.btnHash_Click);
+            // 
+            // btnBase64
+            // 
+            this.btnBase64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
+            this.btnBase64.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBase64.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBase64.FlatAppearance.BorderSize = 0;
+            this.btnBase64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBase64.Location = new System.Drawing.Point(0, 240);
+            this.btnBase64.Name = "btnBase64";
+            this.btnBase64.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnBase64.Size = new System.Drawing.Size(239, 40);
+            this.btnBase64.TabIndex = 34;
+            this.btnBase64.Text = "Base 64";
+            this.btnBase64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBase64.UseVisualStyleBackColor = false;
+            this.btnBase64.Click += new System.EventHandler(this.btnBase64_Click);
             // 
             // btnCodigoMorse
             // 
@@ -1039,23 +1075,6 @@
             this.pnlDec028.Size = new System.Drawing.Size(20, 20);
             this.pnlDec028.TabIndex = 8;
             // 
-            // btnCapsLockSteg
-            // 
-            this.btnCapsLockSteg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
-            this.btnCapsLockSteg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCapsLockSteg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapsLockSteg.FlatAppearance.BorderSize = 0;
-            this.btnCapsLockSteg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapsLockSteg.Location = new System.Drawing.Point(0, 160);
-            this.btnCapsLockSteg.Name = "btnCapsLockSteg";
-            this.btnCapsLockSteg.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCapsLockSteg.Size = new System.Drawing.Size(239, 40);
-            this.btnCapsLockSteg.TabIndex = 5;
-            this.btnCapsLockSteg.Text = "CapsLockSteg";
-            this.btnCapsLockSteg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapsLockSteg.UseVisualStyleBackColor = false;
-            this.btnCapsLockSteg.Click += new System.EventHandler(this.btnCapsLockSteg_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1146,13 +1165,6 @@
         private System.Windows.Forms.Panel pnlCriptografiaSubMenu;
         private System.Windows.Forms.Button btnCriptografia;
         private System.Windows.Forms.Panel pnlPrincipalSubMenu;
-        private System.Windows.Forms.Panel pnlHashSubMenu;
-        private System.Windows.Forms.Button btnSHA512;
-        private System.Windows.Forms.Button btnSHA384;
-        private System.Windows.Forms.Button btnSHA256;
-        private System.Windows.Forms.Button btnSHA1;
-        private System.Windows.Forms.Button btnMD5;
-        private System.Windows.Forms.Button btnHash;
         private System.Windows.Forms.Button btnCodigoMorse;
         private System.Windows.Forms.Button btnCodigoBinario;
         private System.Windows.Forms.Button btnCifraVigenere;
@@ -1164,6 +1176,14 @@
         private System.Windows.Forms.Button btnOqueeCriptografia;
         private System.Windows.Forms.Button btnCipherNext;
         private System.Windows.Forms.Button btnCapsLockSteg;
+        private System.Windows.Forms.Button btnBase64;
+        private System.Windows.Forms.Panel pnlHashSubMenu;
+        private System.Windows.Forms.Button btnSHA512;
+        private System.Windows.Forms.Button btnSHA384;
+        private System.Windows.Forms.Button btnSHA256;
+        private System.Windows.Forms.Button btnSHA1;
+        private System.Windows.Forms.Button btnMD5;
+        private System.Windows.Forms.Button btnHash;
     }
 }
 

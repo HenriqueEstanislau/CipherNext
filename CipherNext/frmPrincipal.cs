@@ -100,6 +100,8 @@ namespace CipherNext
         {
             showSubMenu(pnlEsteganografiaSubMenu);
         }
+
+
         private void btnHash_Click(object sender, EventArgs e)
         {
             if (HashMenuActive == true)
@@ -114,6 +116,7 @@ namespace CipherNext
                 pnlCriptografiaSubMenu.Size = new Size(pnlCriptografiaSubMenu.Size.Width, pnlCriptografiaSubMenu.Size.Height + pnlHashSubMenu.Size.Height);
             }
         }
+
         //
         // Buttons
         //
@@ -210,5 +213,13 @@ namespace CipherNext
             openContainer(new frmCapsLockSteg());
             hideSubMenu();
         }
+
+        private void btnBase64_Click(object sender, EventArgs e)
+        {
+            openContainer(new frmBase64());
+            hideSubMenu();
+        }
+
+
     }
 }
