@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CipherNext.Esteganografia
 {
@@ -16,6 +17,7 @@ namespace CipherNext.Esteganografia
         {
             InitializeComponent();
         }
+
         private void btnEsconder_Click(object sender, EventArgs e)
         {
             string frase = rtxtTexto.Text.ToLower();
@@ -32,14 +34,19 @@ namespace CipherNext.Esteganografia
             lblLetrasEscondidas.Text = ExtrairLetrasMaiusculas(rtxtAnaliseLetras.Text);
             if (lblLetrasEscondidas.Text.ToUpper() == txtMensagem.Text.ToUpper())
             {
-                lblStatus.Text = "SUCESSO: Foi possível fazer a conversão";
+                lblStatus.Text = "SUCESSO: \nFoi possível fazer a conversão";
+                MessageBox.Show("Mensagem convertida com sucesso!!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                pnlStatus.BackColor = Color.DarkGreen;
             }
             else
             {
                 double porcentagemFalta = ((Double.Parse(lblLetrasEscondidas.Text.Length.ToString()) / Double.Parse(txtMensagem.Text.Length.ToString())) * 100);
                 int letrasFalta = txtMensagem.Text.Length - lblLetrasEscondidas.Text.Length;
-                lblStatus.Text = $"ALERTA: Não foi possível fazer a conversão completa! {porcentagemFalta:F2}% concluido, faltam {letrasFalta} letras";
+                lblStatus.Text = $"ALERTA: \nNão foi possível fazer a conversão completa! \n{porcentagemFalta:F2}% concluido; \nFaltam {letrasFalta} letras.";
+                MessageBox.Show("Não foi possivel realizar a conversão da mensagem completa!\nConfira a aba 'Diagnóstico' para mais detalhes", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                pnlStatus.BackColor = Color.DarkOrange;
             }
+            lblTotalLetra.Text = rtxtAnaliseLetras.Text.Length.ToString();
         }
 
         private string ExtrairLetrasMaiusculas(string input)
@@ -127,6 +134,11 @@ namespace CipherNext.Esteganografia
             return fraseResultante;
         }
 
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void rtxtTexto_TextChanged(object sender, EventArgs e)
         {
             lblTotalTexto.Text = rtxtTexto.Text.Length.ToString();
@@ -135,11 +147,6 @@ namespace CipherNext.Esteganografia
         private void rtxtAnaliseLetras_TextChanged(object sender, EventArgs e)
         {
             lblTotalLetra.Text = rtxtAnaliseLetras.Text.Length.ToString();
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
