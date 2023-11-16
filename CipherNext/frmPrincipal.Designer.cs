@@ -67,7 +67,6 @@
             this.pnlEsteganografiaSubMenu = new System.Windows.Forms.Panel();
             this.btnCapsLockSteg = new System.Windows.Forms.Button();
             this.btnLSB = new System.Windows.Forms.Button();
-            this.btnEspacoEmBranco = new System.Windows.Forms.Button();
             this.btnArquivoZip = new System.Windows.Forms.Button();
             this.btnBlocoNotas = new System.Windows.Forms.Button();
             this.btnEsteganografia = new System.Windows.Forms.Button();
@@ -498,13 +497,12 @@
             this.pnlEsteganografiaSubMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnCapsLockSteg);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnLSB);
-            this.pnlEsteganografiaSubMenu.Controls.Add(this.btnEspacoEmBranco);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 623);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
-            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 204);
+            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 166);
             this.pnlEsteganografiaSubMenu.TabIndex = 27;
             // 
             // btnCapsLockSteg
@@ -514,7 +512,7 @@
             this.btnCapsLockSteg.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapsLockSteg.FlatAppearance.BorderSize = 0;
             this.btnCapsLockSteg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapsLockSteg.Location = new System.Drawing.Point(0, 160);
+            this.btnCapsLockSteg.Location = new System.Drawing.Point(0, 120);
             this.btnCapsLockSteg.Name = "btnCapsLockSteg";
             this.btnCapsLockSteg.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnCapsLockSteg.Size = new System.Drawing.Size(239, 40);
@@ -526,12 +524,12 @@
             // 
             // btnLSB
             // 
-            this.btnLSB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
+            this.btnLSB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.btnLSB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLSB.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLSB.FlatAppearance.BorderSize = 0;
             this.btnLSB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLSB.Location = new System.Drawing.Point(0, 120);
+            this.btnLSB.Location = new System.Drawing.Point(0, 80);
             this.btnLSB.Name = "btnLSB";
             this.btnLSB.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnLSB.Size = new System.Drawing.Size(239, 40);
@@ -540,23 +538,6 @@
             this.btnLSB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLSB.UseVisualStyleBackColor = false;
             this.btnLSB.Click += new System.EventHandler(this.btnLSB_Click);
-            // 
-            // btnEspacoEmBranco
-            // 
-            this.btnEspacoEmBranco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
-            this.btnEspacoEmBranco.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEspacoEmBranco.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEspacoEmBranco.FlatAppearance.BorderSize = 0;
-            this.btnEspacoEmBranco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEspacoEmBranco.Location = new System.Drawing.Point(0, 80);
-            this.btnEspacoEmBranco.Name = "btnEspacoEmBranco";
-            this.btnEspacoEmBranco.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnEspacoEmBranco.Size = new System.Drawing.Size(239, 40);
-            this.btnEspacoEmBranco.TabIndex = 3;
-            this.btnEspacoEmBranco.Text = "Espaço em branco";
-            this.btnEspacoEmBranco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEspacoEmBranco.UseVisualStyleBackColor = false;
-            this.btnEspacoEmBranco.Click += new System.EventHandler(this.btnEspacoEmBranco_Click);
             // 
             // btnArquivoZip
             // 
@@ -1159,7 +1140,6 @@
         private System.Windows.Forms.Panel pnlDec028;
         private System.Windows.Forms.Panel pnlEsteganografiaSubMenu;
         private System.Windows.Forms.Button btnLSB;
-        private System.Windows.Forms.Button btnEspacoEmBranco;
         private System.Windows.Forms.Button btnArquivoZip;
         private System.Windows.Forms.Button btnBlocoNotas;
         private System.Windows.Forms.Button btnEsteganografia;
