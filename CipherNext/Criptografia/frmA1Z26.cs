@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CipherNext.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,7 +77,7 @@ namespace CipherNext.Criptografia
 
         private void btnDescricao_Click(object sender, EventArgs e)
         {
-            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao();
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.A1Z26);
             visualizarDescricao.ShowDialog();
         }
 

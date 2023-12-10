@@ -65,7 +65,7 @@ namespace CipherNext.Criptografia
 
         private void btnDescricao_Click(object sender, EventArgs e)
         {
-            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao();
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Atbash);
             visualizarDescricao.ShowDialog();
         }
 

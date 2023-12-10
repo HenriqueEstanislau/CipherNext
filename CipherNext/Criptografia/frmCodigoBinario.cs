@@ -57,5 +57,11 @@ namespace CipherNext.Criptografia
         {
             this.Close();
         }
+
+        private void btnDescricao_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Codigo_Binario);
+            visualizarDescricao.ShowDialog();
+        }
     }
 }
