@@ -32,15 +32,16 @@
             this.txtHash = new System.Windows.Forms.TextBox();
             this.rtxtTexto = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnDescricao = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDescricao = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.txtHash);
             this.panel1.Controls.Add(this.rtxtTexto);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -81,41 +82,50 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Hash SHA 384";
             // 
-            // btnFechar
-            // 
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnFechar.Location = new System.Drawing.Point(71, 21);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(51, 28);
-            this.btnFechar.TabIndex = 6;
-            this.btnFechar.Text = "←";
-            this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // btnDescricao
-            // 
-            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.btnDescricao.Location = new System.Drawing.Point(822, 120);
-            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDescricao.Name = "btnDescricao";
-            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 5;
-            this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = true;
-            this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click);
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnDescricao);
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btnFechar);
+            this.panel3.Controls.Add(this.btnDescricao);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1008, 187);
             this.panel3.TabIndex = 15;
+            // 
+            // btnDescricao
+            // 
+            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
+            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDescricao.FlatAppearance.BorderSize = 0;
+            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescricao.ForeColor = System.Drawing.Color.White;
+            this.btnDescricao.Location = new System.Drawing.Point(822, 120);
+            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDescricao.Name = "btnDescricao";
+            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
+            this.btnDescricao.TabIndex = 13;
+            this.btnDescricao.Text = "Descrição";
+            this.btnDescricao.UseVisualStyleBackColor = false;
+            this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(71, 21);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(77, 35);
+            this.btnFechar.TabIndex = 14;
+            this.btnFechar.Text = "←";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // frmSHA384
             // 
@@ -141,8 +151,8 @@
         private System.Windows.Forms.TextBox txtHash;
         private System.Windows.Forms.RichTextBox rtxtTexto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button btnDescricao;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnDescricao;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

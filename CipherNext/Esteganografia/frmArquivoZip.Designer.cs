@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDescricao = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExecutar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pbImgEsconder = new System.Windows.Forms.PictureBox();
             this.btnSelecionarDiretorioImg = new System.Windows.Forms.Button();
             this.txtDiretorioImagem = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSelecionarDiretorioZip = new System.Windows.Forms.Button();
             this.txtDiretorioZip = new System.Windows.Forms.TextBox();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnDescricao = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbImgEsconder = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImgEsconder)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -62,6 +62,38 @@
             this.panel3.Size = new System.Drawing.Size(1008, 117);
             this.panel3.TabIndex = 15;
             // 
+            // btnDescricao
+            // 
+            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
+            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDescricao.FlatAppearance.BorderSize = 0;
+            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescricao.ForeColor = System.Drawing.Color.White;
+            this.btnDescricao.Location = new System.Drawing.Point(832, 73);
+            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDescricao.Name = "btnDescricao";
+            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
+            this.btnDescricao.TabIndex = 8;
+            this.btnDescricao.Text = "Descrição";
+            this.btnDescricao.UseVisualStyleBackColor = false;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.White;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(53, 22);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(77, 35);
+            this.btnFechar.TabIndex = 7;
+            this.btnFechar.Text = "←";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -74,7 +106,8 @@
             // 
             // btnExecutar
             // 
-            this.btnExecutar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExecutar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExecutar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(235)))));
             this.btnExecutar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -90,6 +123,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -106,7 +140,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pbImgEsconder);
             this.panel2.Controls.Add(this.btnSelecionarDiretorioImg);
@@ -116,6 +150,29 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(498, 520);
             this.panel2.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(65, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Imagem:";
+            // 
+            // pbImgEsconder
+            // 
+            this.pbImgEsconder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbImgEsconder.BackColor = System.Drawing.Color.AliceBlue;
+            this.pbImgEsconder.Location = new System.Drawing.Point(68, 50);
+            this.pbImgEsconder.Name = "pbImgEsconder";
+            this.pbImgEsconder.Size = new System.Drawing.Size(368, 347);
+            this.pbImgEsconder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImgEsconder.TabIndex = 20;
+            this.pbImgEsconder.TabStop = false;
             // 
             // btnSelecionarDiretorioImg
             // 
@@ -148,7 +205,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Snow;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.btnExecutar);
             this.panel4.Controls.Add(this.btnSelecionarDiretorioZip);
             this.panel4.Controls.Add(this.txtDiretorioZip);
@@ -188,71 +245,17 @@
             this.txtDiretorioZip.Size = new System.Drawing.Size(368, 31);
             this.txtDiretorioZip.TabIndex = 22;
             // 
-            // btnFechar
-            // 
-            this.btnFechar.BackColor = System.Drawing.Color.White;
-            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(53, 22);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(77, 35);
-            this.btnFechar.TabIndex = 7;
-            this.btnFechar.Text = "←";
-            this.btnFechar.UseVisualStyleBackColor = false;
-            // 
-            // btnDescricao
-            // 
-            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
-            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDescricao.FlatAppearance.BorderSize = 0;
-            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescricao.ForeColor = System.Drawing.Color.White;
-            this.btnDescricao.Location = new System.Drawing.Point(832, 73);
-            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDescricao.Name = "btnDescricao";
-            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 8;
-            this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = false;
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(53, 327);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 13);
+            this.label3.Size = new System.Drawing.Size(180, 16);
             this.label3.TabIndex = 21;
             this.label3.Text = "Arquivo Zip selecionado:";
-            // 
-            // pbImgEsconder
-            // 
-            this.pbImgEsconder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbImgEsconder.BackColor = System.Drawing.Color.AliceBlue;
-            this.pbImgEsconder.Location = new System.Drawing.Point(68, 50);
-            this.pbImgEsconder.Name = "pbImgEsconder";
-            this.pbImgEsconder.Size = new System.Drawing.Size(368, 347);
-            this.pbImgEsconder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImgEsconder.TabIndex = 20;
-            this.pbImgEsconder.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Imagem:";
             // 
             // frmArquivoZip
             // 
@@ -269,9 +272,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImgEsconder)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImgEsconder)).EndInit();
             this.ResumeLayout(false);
 
         }

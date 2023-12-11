@@ -123,6 +123,26 @@ namespace CipherNext.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Byte[].
         /// </summary>
+        internal static byte[] Criptografia {
+            get {
+                object obj = ResourceManager.GetObject("Criptografia", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] HASH {
+            get {
+                object obj = ResourceManager.GetObject("HASH", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
         internal static byte[] MD5 {
             get {
                 object obj = ResourceManager.GetObject("MD5", resourceCulture);

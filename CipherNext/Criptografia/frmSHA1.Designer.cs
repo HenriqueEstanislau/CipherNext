@@ -41,6 +41,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btnDescricao);
             this.panel3.Controls.Add(this.btnFechar);
             this.panel3.Controls.Add(this.label1);
@@ -53,27 +54,34 @@
             // btnDescricao
             // 
             this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
+            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDescricao.FlatAppearance.BorderSize = 0;
+            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescricao.ForeColor = System.Drawing.Color.White;
             this.btnDescricao.Location = new System.Drawing.Point(822, 120);
             this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
             this.btnDescricao.Name = "btnDescricao";
             this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 5;
+            this.btnDescricao.TabIndex = 11;
             this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = true;
+            this.btnDescricao.UseVisualStyleBackColor = false;
             this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click);
             // 
             // btnFechar
             // 
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.Location = new System.Drawing.Point(71, 21);
             this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(51, 28);
-            this.btnFechar.TabIndex = 6;
+            this.btnFechar.Size = new System.Drawing.Size(77, 35);
+            this.btnFechar.TabIndex = 10;
             this.btnFechar.Text = "←";
             this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label1
             // 
@@ -87,6 +95,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.txtHash);
             this.panel1.Controls.Add(this.rtxtTexto);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -139,11 +148,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnDescricao;
-        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtHash;
         private System.Windows.Forms.RichTextBox rtxtTexto;
+        private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.Button btnDescricao;
     }
 }

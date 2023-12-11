@@ -17,17 +17,6 @@ namespace CipherNext.Criptografia
             InitializeComponent();
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnDescricao_Click(object sender, EventArgs e)
-        {
-            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Vigenere);
-            visualizarDescricao.ShowDialog();
-        }
-
         private void btnCifrar_Click(object sender, EventArgs e)
         {
             if (txtChave.Text == "")
@@ -94,6 +83,12 @@ namespace CipherNext.Criptografia
             }
 
             return decryptedText.ToString();
+        }
+
+        private void btnDescricao_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Vigenere);
+            visualizarDescricao.ShowDialog();
         }
     }
 }

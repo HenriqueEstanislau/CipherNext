@@ -62,13 +62,7 @@ namespace CipherNext.Criptografia
         {
             this.Close();
         }
-
-        private void btnDescricao_Click(object sender, EventArgs e)
-        {
-            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Atbash);
-            visualizarDescricao.ShowDialog();
-        }
-
+        
         private void btnCifrar_Click(object sender, EventArgs e)
         {
             rtxtCriptografado.Text = Encrypt(rtxtTexto.Text);
@@ -77,6 +71,17 @@ namespace CipherNext.Criptografia
         private void btnDecifrar_Click(object sender, EventArgs e)
         {
             rtxtTexto.Text = Decrypt(rtxtCriptografado.Text);
+        }
+
+        private void btnDescricao_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Atbash);
+            visualizarDescricao.ShowDialog();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

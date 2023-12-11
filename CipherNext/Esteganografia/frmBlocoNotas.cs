@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -119,6 +120,7 @@ namespace CipherNext.Esteganografia
                     extensionImage = Path.GetExtension(openFileDialog.FileName);
                     selectedPath = Path.GetFullPath(openFileDialog.FileName);
                     txtDiretorioImagem.Text = selectedPath;
+                    pbImgEsconder.ImageLocation = openFileDialog.FileName;
                 }
             }
         }

@@ -136,6 +136,12 @@
   <data name="Codigo_Morse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Codigo_Morse.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Criptografia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Criptografia.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HASH.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="MD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MD5.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

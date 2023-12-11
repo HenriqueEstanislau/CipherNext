@@ -500,9 +500,9 @@
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 623);
+            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 619);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
-            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 166);
+            this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 160);
             this.pnlEsteganografiaSubMenu.TabIndex = 27;
             // 
             // btnCapsLockSteg
@@ -581,7 +581,7 @@
             this.btnEsteganografia.FlatAppearance.BorderSize = 0;
             this.btnEsteganografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEsteganografia.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEsteganografia.Location = new System.Drawing.Point(0, 578);
+            this.btnEsteganografia.Location = new System.Drawing.Point(0, 574);
             this.btnEsteganografia.Name = "btnEsteganografia";
             this.btnEsteganografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEsteganografia.Size = new System.Drawing.Size(239, 45);
@@ -604,7 +604,7 @@
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnAtbash);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnA1Z26);
             this.pnlCriptografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 254);
+            this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 250);
             this.pnlCriptografiaSubMenu.Name = "pnlCriptografiaSubMenu";
             this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 324);
             this.pnlCriptografiaSubMenu.TabIndex = 24;
@@ -853,7 +853,7 @@
             this.btnCriptografia.FlatAppearance.BorderSize = 0;
             this.btnCriptografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCriptografia.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCriptografia.Location = new System.Drawing.Point(0, 209);
+            this.btnCriptografia.Location = new System.Drawing.Point(0, 205);
             this.btnCriptografia.Name = "btnCriptografia";
             this.btnCriptografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCriptografia.Size = new System.Drawing.Size(239, 45);
@@ -873,7 +873,7 @@
             this.pnlPrincipalSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPrincipalSubMenu.Location = new System.Drawing.Point(0, 45);
             this.pnlPrincipalSubMenu.Name = "pnlPrincipalSubMenu";
-            this.pnlPrincipalSubMenu.Size = new System.Drawing.Size(239, 164);
+            this.pnlPrincipalSubMenu.Size = new System.Drawing.Size(239, 160);
             this.pnlPrincipalSubMenu.TabIndex = 20;
             // 
             // btnOqueeHash

@@ -37,16 +37,11 @@ namespace CipherNext.Criptografia
         {
             txtHash.Text = CalcularSHA256(rtxtTexto.Text);
         }
-
+        
         private void btnDescricao_Click(object sender, EventArgs e)
         {
             frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.SHA_256);
             visualizarDescricao.ShowDialog();
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

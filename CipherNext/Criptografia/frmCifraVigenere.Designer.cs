@@ -30,7 +30,6 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnDescricao = new System.Windows.Forms.Button();
-            this.btnFechar = new System.Windows.Forms.Button();
             this.txtChave = new System.Windows.Forms.TextBox();
             this.lblChave = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.rtxtTexto = new System.Windows.Forms.RichTextBox();
             this.btnCifrar = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,8 +51,9 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnDescricao);
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btnFechar);
+            this.panel3.Controls.Add(this.btnDescricao);
             this.panel3.Controls.Add(this.txtChave);
             this.panel3.Controls.Add(this.lblChave);
             this.panel3.Controls.Add(this.label1);
@@ -65,27 +66,20 @@
             // btnDescricao
             // 
             this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
+            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDescricao.FlatAppearance.BorderSize = 0;
+            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescricao.ForeColor = System.Drawing.Color.White;
             this.btnDescricao.Location = new System.Drawing.Point(822, 120);
             this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
             this.btnDescricao.Name = "btnDescricao";
             this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 5;
+            this.btnDescricao.TabIndex = 11;
             this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = true;
+            this.btnDescricao.UseVisualStyleBackColor = false;
             this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click);
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnFechar.Location = new System.Drawing.Point(71, 21);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(51, 28);
-            this.btnFechar.TabIndex = 6;
-            this.btnFechar.Text = "←";
-            this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // txtChave
             // 
@@ -117,6 +111,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -133,6 +128,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.rtxtCriptografado);
             this.panel1.Controls.Add(this.btnDecifrar);
@@ -166,16 +162,22 @@
             // 
             this.btnDecifrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDecifrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(235)))));
+            this.btnDecifrar.FlatAppearance.BorderSize = 0;
+            this.btnDecifrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecifrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecifrar.ForeColor = System.Drawing.Color.White;
             this.btnDecifrar.Location = new System.Drawing.Point(51, 321);
             this.btnDecifrar.Name = "btnDecifrar";
             this.btnDecifrar.Size = new System.Drawing.Size(375, 48);
             this.btnDecifrar.TabIndex = 4;
             this.btnDecifrar.Text = "Decifrar";
-            this.btnDecifrar.UseVisualStyleBackColor = true;
+            this.btnDecifrar.UseVisualStyleBackColor = false;
             this.btnDecifrar.Click += new System.EventHandler(this.btnDecifrar_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.rtxtTexto);
             this.panel2.Controls.Add(this.btnCifrar);
@@ -209,13 +211,32 @@
             // 
             this.btnCifrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCifrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(235)))));
+            this.btnCifrar.FlatAppearance.BorderSize = 0;
+            this.btnCifrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCifrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCifrar.ForeColor = System.Drawing.Color.White;
             this.btnCifrar.Location = new System.Drawing.Point(68, 321);
             this.btnCifrar.Name = "btnCifrar";
             this.btnCifrar.Size = new System.Drawing.Size(382, 48);
             this.btnCifrar.TabIndex = 2;
             this.btnCifrar.Text = "Cifrar";
-            this.btnCifrar.UseVisualStyleBackColor = true;
+            this.btnCifrar.UseVisualStyleBackColor = false;
             this.btnCifrar.Click += new System.EventHandler(this.btnCifrar_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(71, 21);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(77, 35);
+            this.btnFechar.TabIndex = 12;
+            this.btnFechar.Text = "←";
+            this.btnFechar.UseVisualStyleBackColor = true;
             // 
             // frmCifraVigenere
             // 
@@ -241,8 +262,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnDescricao;
-        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtChave;
         private System.Windows.Forms.Label lblChave;
         private System.Windows.Forms.Label label1;
@@ -255,5 +274,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rtxtTexto;
         private System.Windows.Forms.Button btnCifrar;
+        private System.Windows.Forms.Button btnDescricao;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

@@ -196,13 +196,6 @@ namespace CipherNext
             openContainer(new frmArquivoZip());
             hideSubMenu();
         }
-
-        private void btnEspacoEmBranco_Click(object sender, EventArgs e)
-        {
-            openContainer(new frmEspacoEmBranco());
-            hideSubMenu();
-        }
-
         private void btnLSB_Click(object sender, EventArgs e)
         {
             openContainer(new frmLSB());

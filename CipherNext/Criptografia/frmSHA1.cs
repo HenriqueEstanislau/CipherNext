@@ -38,11 +38,7 @@ namespace CipherNext.Criptografia
             txtHash.Text = CalcularSHA1(rtxtTexto.Text);
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void btnDescricao_Click(object sender, EventArgs e)
         {
             frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.SHA_256);

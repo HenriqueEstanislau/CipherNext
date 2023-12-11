@@ -79,7 +79,7 @@
             this.btnDescricao.TabIndex = 5;
             this.btnDescricao.Text = "Descrição";
             this.btnDescricao.UseVisualStyleBackColor = false;
-            this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click);
+            this.btnDescricao.Click += new System.EventHandler(this.btnDescricao_Click_1);
             // 
             // btnFechar
             // 

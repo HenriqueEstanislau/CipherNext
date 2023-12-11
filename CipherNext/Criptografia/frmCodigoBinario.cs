@@ -53,15 +53,15 @@ namespace CipherNext.Criptografia
             rtxtTexto.Text = textoDescriptografado;
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnDescricao_Click(object sender, EventArgs e)
         {
             frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Codigo_Binario);
             visualizarDescricao.ShowDialog();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
