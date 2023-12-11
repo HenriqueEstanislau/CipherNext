@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.btnDescricao = new System.Windows.Forms.Button();
             this.txtChave = new System.Windows.Forms.TextBox();
             this.lblChave = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.rtxtTexto = new System.Windows.Forms.RichTextBox();
             this.btnCifrar = new System.Windows.Forms.Button();
-            this.btnFechar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -62,6 +62,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1008, 187);
             this.panel3.TabIndex = 13;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(71, 21);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(77, 35);
+            this.btnFechar.TabIndex = 12;
+            this.btnFechar.Text = "←";
+            this.btnFechar.UseVisualStyleBackColor = true;
             // 
             // btnDescricao
             // 
@@ -152,6 +166,7 @@
             this.rtxtCriptografado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtxtCriptografado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtCriptografado.Location = new System.Drawing.Point(51, 41);
             this.rtxtCriptografado.Name = "rtxtCriptografado";
             this.rtxtCriptografado.Size = new System.Drawing.Size(375, 257);
@@ -201,6 +216,7 @@
             this.rtxtTexto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtxtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtTexto.Location = new System.Drawing.Point(68, 41);
             this.rtxtTexto.Name = "rtxtTexto";
             this.rtxtTexto.Size = new System.Drawing.Size(382, 257);
@@ -223,20 +239,6 @@
             this.btnCifrar.Text = "Cifrar";
             this.btnCifrar.UseVisualStyleBackColor = false;
             this.btnCifrar.Click += new System.EventHandler(this.btnCifrar_Click);
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(71, 21);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(77, 35);
-            this.btnFechar.TabIndex = 12;
-            this.btnFechar.Text = "←";
-            this.btnFechar.UseVisualStyleBackColor = true;
             // 
             // frmCifraVigenere
             // 

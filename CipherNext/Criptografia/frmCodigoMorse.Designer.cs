@@ -145,6 +145,7 @@
             this.rtxtCriptografado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtxtCriptografado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtCriptografado.Location = new System.Drawing.Point(51, 41);
             this.rtxtCriptografado.Name = "rtxtCriptografado";
             this.rtxtCriptografado.Size = new System.Drawing.Size(375, 319);
@@ -194,6 +195,7 @@
             this.rtxtTexto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtxtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtTexto.Location = new System.Drawing.Point(68, 41);
             this.rtxtTexto.Name = "rtxtTexto";
             this.rtxtTexto.Size = new System.Drawing.Size(382, 319);
