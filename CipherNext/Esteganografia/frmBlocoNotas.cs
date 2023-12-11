@@ -73,7 +73,7 @@ namespace CipherNext.Esteganografia
                     string output = process.StandardOutput.ReadToEnd();
                     process.WaitForExit();
 
-                    MessageBox.Show("Output:\n" + output, "Command Execution Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Arquivo gerado com sucesso!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -97,7 +97,6 @@ namespace CipherNext.Esteganografia
 
             string[] userText = { "\n\n\n" + rtxtTexto.Text };
             string tempScriptPath = CriarArquivoTextoTemporario(userText); 
-            MessageBox.Show("MESAGEM: " + tempScriptPath);
             string[] commandLines = { $"copy /b {selectedPath} + {tempScriptPath} {pathImage}\\documento{extensionImage}" };
 
             ExecutarComando(commandLines);

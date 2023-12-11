@@ -219,5 +219,23 @@ namespace CipherNext
             openContainer(new frmCipherNextGeral());
             hideSubMenu();
         }
+
+        private void btnOqueeCriptografia_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Criptografia);
+            visualizarDescricao.ShowDialog();
+        }
+
+        private void btnOqueeEsteganografia_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.Esteganografia);
+            visualizarDescricao.ShowDialog();
+        }
+
+        private void btnOqueeHash_Click(object sender, EventArgs e)
+        {
+            frmVisualizarDescricao visualizarDescricao = new frmVisualizarDescricao(Properties.Resources.HASH);
+            visualizarDescricao.ShowDialog();
+        }
     }
 }

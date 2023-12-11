@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnDescricao = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,11 +55,11 @@
             this.rtxtTextoEscondido = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblAuxiliar = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSelecionarImagem = new System.Windows.Forms.Button();
             this.txtCaminhoImgExtrair = new System.Windows.Forms.TextBox();
             this.pbImgExtrair = new System.Windows.Forms.PictureBox();
-            this.lblAuxiliar = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -82,7 +81,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.btnDescricao);
             this.panel3.Controls.Add(this.btnFechar);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -90,23 +88,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1008, 117);
             this.panel3.TabIndex = 13;
-            // 
-            // btnDescricao
-            // 
-            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
-            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDescricao.FlatAppearance.BorderSize = 0;
-            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescricao.ForeColor = System.Drawing.Color.White;
-            this.btnDescricao.Location = new System.Drawing.Point(832, 73);
-            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDescricao.Name = "btnDescricao";
-            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 5;
-            this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = false;
             // 
             // btnFechar
             // 
@@ -462,6 +443,14 @@
             this.panel5.Size = new System.Drawing.Size(423, 457);
             this.panel5.TabIndex = 3;
             // 
+            // lblAuxiliar
+            // 
+            this.lblAuxiliar.AutoSize = true;
+            this.lblAuxiliar.Location = new System.Drawing.Point(63, 12);
+            this.lblAuxiliar.Name = "lblAuxiliar";
+            this.lblAuxiliar.Size = new System.Drawing.Size(0, 15);
+            this.lblAuxiliar.TabIndex = 23;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -513,14 +502,6 @@
             this.pbImgExtrair.TabIndex = 19;
             this.pbImgExtrair.TabStop = false;
             // 
-            // lblAuxiliar
-            // 
-            this.lblAuxiliar.AutoSize = true;
-            this.lblAuxiliar.Location = new System.Drawing.Point(63, 12);
-            this.lblAuxiliar.Name = "lblAuxiliar";
-            this.lblAuxiliar.Size = new System.Drawing.Size(0, 15);
-            this.lblAuxiliar.TabIndex = 23;
-            // 
             // frmLSB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -559,7 +540,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnDescricao;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;

@@ -310,6 +310,7 @@
     <None Include="Resources\Codigo_Binario.pdf" />
     <None Include="Resources\Codigo_Morse.pdf" />
     <None Include="Resources\Criptografia.pdf" />
+    <None Include="Resources\Esteganografia.pdf" />
     <None Include="Resources\HASH.pdf" />
     <None Include="Resources\MD5.pdf" />
     <None Include="Resources\SHA_256.pdf" />
@@ -324,6 +325,7 @@
     <Content Include="icudt.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Logo.bmp" />
     <Content Include="x64\pdfium.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

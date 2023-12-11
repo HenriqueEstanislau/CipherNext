@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnDescricao = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExecutar = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.btnDescricao);
             this.panel3.Controls.Add(this.btnFechar);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -61,23 +59,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1008, 117);
             this.panel3.TabIndex = 15;
-            // 
-            // btnDescricao
-            // 
-            this.btnDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
-            this.btnDescricao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDescricao.FlatAppearance.BorderSize = 0;
-            this.btnDescricao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDescricao.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescricao.ForeColor = System.Drawing.Color.White;
-            this.btnDescricao.Location = new System.Drawing.Point(832, 73);
-            this.btnDescricao.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDescricao.Name = "btnDescricao";
-            this.btnDescricao.Size = new System.Drawing.Size(111, 28);
-            this.btnDescricao.TabIndex = 8;
-            this.btnDescricao.Text = "Descrição";
-            this.btnDescricao.UseVisualStyleBackColor = false;
             // 
             // btnFechar
             // 
@@ -292,7 +273,6 @@
         private System.Windows.Forms.Button btnSelecionarDiretorioZip;
         private System.Windows.Forms.TextBox txtDiretorioZip;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button btnDescricao;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbImgEsconder;
         private System.Windows.Forms.Label label2;

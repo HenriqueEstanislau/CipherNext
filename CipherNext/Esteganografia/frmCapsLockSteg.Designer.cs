@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,17 +50,17 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.pnlStatus = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblLetrasEscondidas = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rtxtAnaliseLetras = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lblTotalLetra = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pnlStatus = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -74,15 +73,14 @@
             this.tabPage2.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.btnFechar);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -91,30 +89,15 @@
             this.panel3.Size = new System.Drawing.Size(1008, 122);
             this.panel3.TabIndex = 25;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(119)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(825, 70);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Descrição";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btnFechar
             // 
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.Location = new System.Drawing.Point(71, 21);
             this.btnFechar.Margin = new System.Windows.Forms.Padding(0);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(51, 28);
+            this.btnFechar.Size = new System.Drawing.Size(79, 38);
             this.btnFechar.TabIndex = 6;
             this.btnFechar.Text = "←";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -369,6 +352,38 @@
             this.panel12.Size = new System.Drawing.Size(573, 414);
             this.panel12.TabIndex = 13;
             // 
+            // pnlStatus
+            // 
+            this.pnlStatus.Location = new System.Drawing.Point(39, 315);
+            this.pnlStatus.Name = "pnlStatus";
+            this.pnlStatus.Size = new System.Drawing.Size(40, 5);
+            this.pnlStatus.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.SystemColors.Window;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.lblStatus);
+            this.panel6.Location = new System.Drawing.Point(39, 326);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(487, 83);
+            this.panel6.TabIndex = 17;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AllowDrop = true;
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(6, 7);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(474, 70);
+            this.lblStatus.TabIndex = 13;
+            this.lblStatus.Text = "null";
+            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -439,19 +454,6 @@
             this.label14.TabIndex = 13;
             this.label14.Text = "Status:";
             // 
-            // lblStatus
-            // 
-            this.lblStatus.AllowDrop = true;
-            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStatus.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(6, 7);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(474, 70);
-            this.lblStatus.TabIndex = 13;
-            this.lblStatus.Text = "null";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -471,25 +473,6 @@
             this.lblTotalLetra.TabIndex = 12;
             this.lblTotalLetra.Text = "0";
             this.lblTotalLetra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.SystemColors.Window;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.lblStatus);
-            this.panel6.Location = new System.Drawing.Point(39, 326);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(487, 83);
-            this.panel6.TabIndex = 17;
-            // 
-            // pnlStatus
-            // 
-            this.pnlStatus.Location = new System.Drawing.Point(39, 315);
-            this.pnlStatus.Name = "pnlStatus";
-            this.pnlStatus.Size = new System.Drawing.Size(40, 5);
-            this.pnlStatus.TabIndex = 18;
             // 
             // frmCapsLockSteg
             // 
@@ -518,9 +501,9 @@
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -530,7 +513,6 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

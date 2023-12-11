@@ -90,7 +90,6 @@
             this.btnOqueeHash = new System.Windows.Forms.Button();
             this.btnOqueeEsteganografia = new System.Windows.Forms.Button();
             this.btnOqueeCriptografia = new System.Windows.Forms.Button();
-            this.btnCipherNext = new System.Windows.Forms.Button();
             this.btnPrincipal = new System.Windows.Forms.Button();
             this.pnlFooterLateralMenu = new System.Windows.Forms.Panel();
             this.pnlDec032 = new System.Windows.Forms.Panel();
@@ -500,7 +499,7 @@
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnArquivoZip);
             this.pnlEsteganografiaSubMenu.Controls.Add(this.btnBlocoNotas);
             this.pnlEsteganografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 619);
+            this.pnlEsteganografiaSubMenu.Location = new System.Drawing.Point(0, 580);
             this.pnlEsteganografiaSubMenu.Name = "pnlEsteganografiaSubMenu";
             this.pnlEsteganografiaSubMenu.Size = new System.Drawing.Size(239, 160);
             this.pnlEsteganografiaSubMenu.TabIndex = 27;
@@ -581,7 +580,7 @@
             this.btnEsteganografia.FlatAppearance.BorderSize = 0;
             this.btnEsteganografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEsteganografia.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEsteganografia.Location = new System.Drawing.Point(0, 574);
+            this.btnEsteganografia.Location = new System.Drawing.Point(0, 535);
             this.btnEsteganografia.Name = "btnEsteganografia";
             this.btnEsteganografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEsteganografia.Size = new System.Drawing.Size(239, 45);
@@ -604,7 +603,7 @@
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnAtbash);
             this.pnlCriptografiaSubMenu.Controls.Add(this.btnA1Z26);
             this.pnlCriptografiaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 250);
+            this.pnlCriptografiaSubMenu.Location = new System.Drawing.Point(0, 211);
             this.pnlCriptografiaSubMenu.Name = "pnlCriptografiaSubMenu";
             this.pnlCriptografiaSubMenu.Size = new System.Drawing.Size(239, 324);
             this.pnlCriptografiaSubMenu.TabIndex = 24;
@@ -728,7 +727,7 @@
             // 
             // btnBase64
             // 
-            this.btnBase64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
+            this.btnBase64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
             this.btnBase64.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBase64.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBase64.FlatAppearance.BorderSize = 0;
@@ -853,7 +852,7 @@
             this.btnCriptografia.FlatAppearance.BorderSize = 0;
             this.btnCriptografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCriptografia.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCriptografia.Location = new System.Drawing.Point(0, 205);
+            this.btnCriptografia.Location = new System.Drawing.Point(0, 166);
             this.btnCriptografia.Name = "btnCriptografia";
             this.btnCriptografia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCriptografia.Size = new System.Drawing.Size(239, 45);
@@ -869,11 +868,10 @@
             this.pnlPrincipalSubMenu.Controls.Add(this.btnOqueeHash);
             this.pnlPrincipalSubMenu.Controls.Add(this.btnOqueeEsteganografia);
             this.pnlPrincipalSubMenu.Controls.Add(this.btnOqueeCriptografia);
-            this.pnlPrincipalSubMenu.Controls.Add(this.btnCipherNext);
             this.pnlPrincipalSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPrincipalSubMenu.Location = new System.Drawing.Point(0, 45);
             this.pnlPrincipalSubMenu.Name = "pnlPrincipalSubMenu";
-            this.pnlPrincipalSubMenu.Size = new System.Drawing.Size(239, 160);
+            this.pnlPrincipalSubMenu.Size = new System.Drawing.Size(239, 121);
             this.pnlPrincipalSubMenu.TabIndex = 20;
             // 
             // btnOqueeHash
@@ -883,7 +881,7 @@
             this.btnOqueeHash.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOqueeHash.FlatAppearance.BorderSize = 0;
             this.btnOqueeHash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOqueeHash.Location = new System.Drawing.Point(0, 120);
+            this.btnOqueeHash.Location = new System.Drawing.Point(0, 80);
             this.btnOqueeHash.Name = "btnOqueeHash";
             this.btnOqueeHash.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnOqueeHash.Size = new System.Drawing.Size(239, 40);
@@ -891,6 +889,7 @@
             this.btnOqueeHash.Text = "O que é Hash";
             this.btnOqueeHash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOqueeHash.UseVisualStyleBackColor = false;
+            this.btnOqueeHash.Click += new System.EventHandler(this.btnOqueeHash_Click);
             // 
             // btnOqueeEsteganografia
             // 
@@ -899,7 +898,7 @@
             this.btnOqueeEsteganografia.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOqueeEsteganografia.FlatAppearance.BorderSize = 0;
             this.btnOqueeEsteganografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOqueeEsteganografia.Location = new System.Drawing.Point(0, 80);
+            this.btnOqueeEsteganografia.Location = new System.Drawing.Point(0, 40);
             this.btnOqueeEsteganografia.Name = "btnOqueeEsteganografia";
             this.btnOqueeEsteganografia.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnOqueeEsteganografia.Size = new System.Drawing.Size(239, 40);
@@ -907,6 +906,7 @@
             this.btnOqueeEsteganografia.Text = "O que é Esteganografia";
             this.btnOqueeEsteganografia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOqueeEsteganografia.UseVisualStyleBackColor = false;
+            this.btnOqueeEsteganografia.Click += new System.EventHandler(this.btnOqueeEsteganografia_Click);
             // 
             // btnOqueeCriptografia
             // 
@@ -915,7 +915,7 @@
             this.btnOqueeCriptografia.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOqueeCriptografia.FlatAppearance.BorderSize = 0;
             this.btnOqueeCriptografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOqueeCriptografia.Location = new System.Drawing.Point(0, 40);
+            this.btnOqueeCriptografia.Location = new System.Drawing.Point(0, 0);
             this.btnOqueeCriptografia.Name = "btnOqueeCriptografia";
             this.btnOqueeCriptografia.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnOqueeCriptografia.Size = new System.Drawing.Size(239, 40);
@@ -923,23 +923,7 @@
             this.btnOqueeCriptografia.Text = "O que é Criptografia";
             this.btnOqueeCriptografia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOqueeCriptografia.UseVisualStyleBackColor = false;
-            // 
-            // btnCipherNext
-            // 
-            this.btnCipherNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
-            this.btnCipherNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCipherNext.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCipherNext.FlatAppearance.BorderSize = 0;
-            this.btnCipherNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCipherNext.Location = new System.Drawing.Point(0, 0);
-            this.btnCipherNext.Name = "btnCipherNext";
-            this.btnCipherNext.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCipherNext.Size = new System.Drawing.Size(239, 40);
-            this.btnCipherNext.TabIndex = 19;
-            this.btnCipherNext.Text = "CipherNext - Geral";
-            this.btnCipherNext.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCipherNext.UseVisualStyleBackColor = false;
-            this.btnCipherNext.Click += new System.EventHandler(this.btnCipherNext_Click);
+            this.btnOqueeCriptografia.Click += new System.EventHandler(this.btnOqueeCriptografia_Click);
             // 
             // btnPrincipal
             // 
@@ -1155,7 +1139,6 @@
         private System.Windows.Forms.Button btnOqueeHash;
         private System.Windows.Forms.Button btnOqueeEsteganografia;
         private System.Windows.Forms.Button btnOqueeCriptografia;
-        private System.Windows.Forms.Button btnCipherNext;
         private System.Windows.Forms.Button btnCapsLockSteg;
         private System.Windows.Forms.Button btnBase64;
         private System.Windows.Forms.Panel pnlHashSubMenu;

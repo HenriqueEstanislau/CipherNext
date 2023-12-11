@@ -74,7 +74,6 @@ namespace CipherNext.Esteganografia
                 {
                     pathZip = Path.GetDirectoryName(openFileDialog.FileName);
                     extensionZip = Path.GetExtension(openFileDialog.FileName);
-                    MessageBox.Show("EXTENSAO ZIP PARA VERIFICAR: " + extensionZip);
                     selectedPathZip = Path.GetFullPath(openFileDialog.FileName);
                     txtDiretorioZip.Text = selectedPathZip;
                 }
@@ -98,7 +97,7 @@ namespace CipherNext.Esteganografia
                     string output = process.StandardOutput.ReadToEnd();
                     process.WaitForExit();
 
-                    MessageBox.Show("Output:\n" + output, "Command Execution Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Arquivo gerado com sucesso!" + output, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
